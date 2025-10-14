@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Plans to Compare</title>
+</head>
+<body>
+    <h2>Select Plans to Compare</h2>
+    <form action="/compare_results" method="POST">
+    <label for="plans">Select up to 3 Plans:</label><br>
+    <select name="plans" multiple size="10" required>
+        {% for id, name in plans %}
+            <option value="{{ id }}">{{ name }}</option>
+        {% endfor %}
+    </select>
+    <p><em>Hold Ctrl (Windows) or Command (Mac) to select multiple plans</em></p>
+
+    <input type="submit" value="Compare Plans">
+</form>
+
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

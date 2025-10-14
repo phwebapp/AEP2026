@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Comparison</title>
+    <style>
+    table {
+        width: 95%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        table-layout: fixed; /* 👈 Ensures equal-width columns */
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        word-wrap: break-word; /* 👈 Prevents overflow */
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h1>Plan Comparison</h1>
+
+    <table>
+        <tr>
+            <th>Field</th>
+            {% for i in range(plans|length) %}
+                <th>Plan {{ i + 1 }}</th>
+            {% endfor %}
+        </tr>
+
+        {% for field in fields if field != 'id' %}
+        <tr>
+            <td><strong>{{ field }}</strong></td>
+            {% for plan in plans %}
+                <td>{{ plan[field] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div style="text-align:center;">
+       <!-- <a href="/compare">Compare Again</a> |-->
+<br>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

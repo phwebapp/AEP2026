@@ -1,0 +1,47 @@
+﻿State,Carrier,Plan Name,Plan ID,Network,MOOP,Premium,Medical,Rx,PCP,Specialist,Dental,Vision,Hearing, Transportation ,OTC,Food_Util
+TN,AETNA,Aetna Medicare Value Plus (HTN & HLD),H3146-012,HMO,"$6,750 ",$9 ,$0 ,$250 (3-5),$0 ,$25 ,"$2,000 ",$200 ,"$1,250 ",Yes,$45 ,$90 
+TN,AETNA,Aetna Medicare Primary,H5521-502,PPO,"$6,750 ",$0 ,$0 ,$0 ,$0 ,$50 ,"$1,050 ",$110 ,"$1,250 ",Yes,$45 ,$30 
+TN,AETNA,Aetna Medicare Value Plus,H5521-501,PPO,"$6,750 ",$11 ,$0 ,$250 ,$0 ,$35 ,"$1,000 ",$100 ,"$1,250 ",Yes,$45 ,$60 
+TN,AETNA,Aetna Medicare Eagle,H5521-355,PPO,"$6,750 ",$0 ,$0 ,NA,$0 ,$35 ,"$2,000 ",$200 ,"$1,250 ",No,$45 ,$0 
+TN,BCBS,BlueAdvantageGarnet,H-7917-033,PPO,"$4,400 ",$0 ,$0 ,$0 ,$0 ,$30 ,"$2,500 ",$225 ,$399-$899,No,$55 ,$0 
+TN,BCBS,BlueAdvantageExtra,H-7917-041,PPO,"$4,200 ",$26 ,$0 ,$590 ,$0 ,$25 ,"$2,500 ",$250 ,$199-$699,Yes,$125 ,No
+TN,BCBS,BlueAdvantageFreedom,H-7917-039,PPO,"$3,200 ",$0 ,$0 ,$0 ,$0 ,$25 ,"$2,000 ",$225 ,$199-$699,No,$100 ,$0 
+TN,BCBS,Blue Care Plus,H-3259-001,HMO DSNP,"$8,850 ",$0 ,$0 ,$0 ,$0 ,$0 ,"$3,900 ","$3,900 ","$3,900 ",Yes,$230 ,w/OTC
+TN,BCBS,Blue Care Plus Select,H-3259-003,HMO DSNP,"$9,350 ",$0 ,$0 ,$0 ,$0 ,$0 ,Medicaid,$500 ,TruHearing,Yes,$275 ,w/OTC
+TN,CIGNA,Cigna Preferred Medicare,H4513-049-004,HMO,"$5,100 ",$0 ,$0 ,$0 ,$0 ,$15 ,"$2,050 ",$200 ,$399 - $1800,No,$60 ,$0 
+TN,CIGNA,Cigna Preferred Savings Medicare,H4513-068-002,HMO,"$6,200 ",$0 ,$0 ,$0 ,$0 ,$30 ,$650 ,$150 ,$399 - $1800,No,$0 ,
+TN,CIGNA,Cigna Courage Medicare,H4513-033,HMO,"$3,900 ",$0 ,$0 ,NA,$0 ,$30 ,"$2,500 ",$200 ,$399 - $1800,Yes,$100 ,
+TN,CIGNA,Cigna Premier Medicare,H4513-036,HMO POS,"$6,150 ",$51 ,$0 ,$0 ,$0 ,$30 ,"$1,600 ",$300 ,$399 - $1800,No,$50 ,
+TN,CIGNA,Cigna Total Care Plus DSNP,H4513-034,HMO DSNP,"$9,350 ",$17 ,$0 ,$0 ,$0 ,$0 ,"$2,500 ",$400 ,$399 - $1800,Yes,$150 ,$225 
+TN,CIGNA,Cigna Primary Medicare,H4513-053-000,HMO,"$5,000 ",$29 ,$0 ,$590 (AllTiers),$0 ,$0 ,"$1,200 ",$100 ,$399-$1800,Yes,$120 ,
+TN,DEVOTED,Devoted Choice Giveback,H9231-012-000,PPO,"$8,300 ",$0 ,?,$590 ,$0 ,$50 ,$250 ,see Dental,599 - 899,No,$0 ,$0 
+TN,DEVOTED,Devoted Choice TN ,H9231-011-000,PPO,"$5,500 ",$0 ,?,$590 ,$0 ,$30 ,"$1,000 ",see Dental,399 - 699,No,$0 ,$77 
+TN,DEVOTED,Devoted Core TN,H7605-004-000,HMO,"$4,900 ",$0 ,?,$590 ,$0 ,$25 ,"$1,000 ",see Dental,399 - 699,No,$0 ,$91 
+TN,DEVOTED,Devoted BeWell Plus CSNP,H7605-006-000,HMO CSNP,"$6,200 ",$25 ,?,$590 ,$0 ,$20 ,"$1,000 ",see Dental,199 - 499,No,$0 ,$165 
+TN,HUMANA,Humana Gold Plus,H4461-025-000,HMO,"$4,900 ",$0 ,$0 ,$450 ,$0 ,$25 ,"$2,500 ",$250 ,, No ,$50 ,
+TN,HUMANA,Humana Gold Plus DM and Heart,H4461-042-000,HMO CSNP,"$9,350 ",$0 ,$0 ,$590 ,$0 ,$45 ,"$1,500 ",$400 ,$199-$499, No ,$0 ,$115.00 
+TN,HUMANA,Humana Value Plus,H5216-180-000,PPO,"$4,900 ",$31 ,$200 ,$590 ,$0 ,$20 ,"$2,000 ",$250 ,$0 copay,Yes,w/Food Card,$75 
+TN,HUMANA,Humana USAA Honor Giveback,H4461-004-000,HMO,"$3,200 ",$0 ,$0 ,$0 ,$0 ,$25 ,"$2,500 ",$150 ,, No ,$0 ,$0 
+TN,HUMANA,Humana USAA Honor Giveback,H5216-235-000,PPO,"$3,400 ",$0 ,$0 ,$0 ,$0 ,$25 ,"$2,000 ",$150 ,, No ,$0 ,$0 
+TN,HUMANA,Humana Gold Plus SNP DE,H4461-038-000,HMO DSNP,"$9,350 ",$35 ,$0 ,$0 ,CoShare,CoShare,"$2,000 ",$150 ,, No ,$0 ,$150 
+TN,UHC,AARP MA UHC TN-0002,H2001-094-000,LPPO,"$5,900 ",$0 ,$0 ,$255 ,$0 ,$40 ,$0 ,$300 ,99-1249, No ,$25 ,
+TN,UHC,AARP MA UHC TN 0003,H5253-081-000,HMO POS,"$5,400 ",$0 ,$0 ,$340 ,$0 ,$30 ,"$2,500 ",$300 ,99-1249, No ,$30 ,
+TN,UHC,AARP MA UHC TN 0004,H5253-082-000,HMO POS,"$3,800 ",$39 ,$0 ,$340 ,$0 ,$25 ,"$4,000 ",$300 ,$99-$1249, No ,$70 ,No
+TN,UHC,UHC Complete Care  TC 0005,H5253-193-001,HMO POS,"$6,700 ",$0 ,$0 ,$255 ,$0 ,$10 ,"$1,000 ",$250 ,99-1249,No,$57 ,w/OTC
+TN,UHC,UHC Complete Care  TC 006 LIS - NEW,H5253-194-001,HMO POS,"$6,700 ",$40 ,$0 ,$590 ,$0 ,$15 ,"$2,000 ",$300 ,99-1249,Yes,$108 ,w/OTC
+TN,UHC,AARP Patriot No RX TC-MA01 - Statewide,H5253-113-000,HMO POS,"$3,900 ",$0 ,$0 ,$0 ,$0 ,$30 ,"$4,000 ",$300 ,99-1249,Yes,$125 ,No
+TN,UHC,AARP Giveback UHC TC-4 - Statewide,H5253-121-000,HMO POS,"$6,300 ",$0 ,$0 ,$495 ,$0 ,$45 ,$0 ,$300 ,99-1249,No,$0 ,No
+TN,UHC,AARP Access UHC TN -7,H2001-086-000,LPPO,"$3,000 ",$247 ,$0 ,$570 ,$0 ,$0 ,"$1,500 ",$250 ,99-1249,No,$0 ,No
+TN,UHC,UHC Dual Complete TN-S001 - DSNP State,H0251-002,HMO POS,$0 ,$0 ,$0 ,$590 ,$0 ,$0 ,"$5,000 ",$600 ,"$3,200 ",Yes,$290 ,w/OTC
+TN,UHC,UHC Dual Complete TN-Y001 - DSNP State,H0251-004,HMO POS,$0 ,$0 ,$0 ,$590 ,$0 ,$0 ,"$5,000 ",$600 ,"$3,200 ",Yes,$336 ,w/OTC
+TN,WELLCARE,Wellcare Assist - LIS,H141-604-2000,HMO POS,"$4,900 ",$30 ,$0 ,$520 ,$0 ,$15 ,"$5,000 ",$200 ,"$1,500 ",Yes,$200 ,
+TN,WELLCARE,Wellcare Simple,H141-607-7000,HMO POS,"$3,800 ",$0 ,$0 ,$420 ,$0 ,$15 ,"$5,000 ",$300 ,"$1,000 ",No,$141 ,
+TN,WELLCARE,Wellcare Giveback,H141-607-9000,HMO POS,"$6,700 ",$0 ,$170 ,$420 ,$0 ,$50 ,$0 ,$100 ,$500 ,No,$0 ,
+TN,WELLCARE,Wellcare Assist - LIS,H141-608-3000,HMO POS,"$4,900 ",$27 ,$0 ,$590 ,$0 ,$15 ,"$5,000 ",$200 ,"$1,500 ",Yes,$200 ,
+TN,WELLCARE,Wellcare Patriot Giveback,H141-606-1000,HMO POS,"$5,000 ",$0 ,$225 ,$0 ,$0 ,$25 ,"$2,000 ",$300 ,"$1,500 ",No,$0 ,
+TN,WELLCARE,Wellcare Dual Access,H141-603-5000,HMO POS DSNP,"$9,350 ",$0 ,$0 ,$0 ,$0 ,$0 ,"$5,000 ",$300 ,"$1,500 ",Yes,$144 ,w/OTC
+TN,WELLPOINT,Wellpoint Extra Help - NURSE,H5828-008-000,HMO POS,"$4,900 ",$9 ,$0 ,$590 ,$0 ,$25 ,"$3,250 ",$250 ,$300-$3000,Yes,$65 ,w/OTC
+TN,WELLPOINT,Wellpoint Medicare Advantage - NURSE,H5828-013-000,HMO POS,"$6,750 ",$0 ,$0 ,$0 ,$0 ,$45 ,"$2,000 ",$200 ,$300-$3000,Yes,$60 ,EE
+TN,WELLPOINT,Wellpoint Medicare Advantage 2 - NURSE,H5828-014-000,HMO POS,"$4,150 ",$0 ,$0 ,$0 ,$0 ,$30 ,"$2,500 ",$250 ,$300-$3000,Yes,$20 ,EE
+TN,WELLPOINT,Wellpoint Full Dual Advantage Support - Nurse,H5828-001-000,HMO DSNP,"$9,350 ",$0 ,$0 ,$0 ,$0 ,$0 ,"$6,000 ",$650 ,$300-$3000,Yes,$310 ,w/OTC
+TN,WELLPOINT,Wellpoint Full Dual Advantage - Nurse,H5828-002-000,HMO DSNP,"$9,350 ",$0 ,$0 ,$0 ,$0 ,$0 ,"$5,500 ",$600 ,$300-$3000,Yes,$175 ,w/OTC

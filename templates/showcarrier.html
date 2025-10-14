@@ -1,0 +1,45 @@
+<!-- templates/show_plans.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ company }} - Available Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            background: #f4f4f4;
+            margin-bottom: 8px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Plans</h1>
+
+{% if plans_by_carrier %}
+    {% for carrier, plans in plans_by_carrier.items() %}
+        <h2>{{ carrier }}</h2>
+        <ul>
+            {% for plan in plans %}
+                <li>{{ plan }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% else %}
+    <p>No plans found for the selected carrier(s).</p>
+{% endif %}
+<br>
+<a href="/">Back to Home</a>
+</body>
+</html>

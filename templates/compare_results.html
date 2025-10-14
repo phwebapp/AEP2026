@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan Comparison</title>
+    <style>
+    table {
+        width: 95%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        table-layout: fixed;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        word-wrap: break-word;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    h1 {
+        text-align: center;
+    }
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <h1>Plan Comparison</h1>
+
+    <table>
+        <tr>
+            <th>SUMMARY OF BENEFITS Link</th>
+            {% for plan in plans %}
+                <th>
+                    {% if plan['SummaryOfBenefitsURL'] %}
+                        <a href="{{ plan['SummaryOfBenefitsURL'] }}" target="_blank">
+                            {{ plan['SummaryOfBenefits'] or 'View Summary' }}
+                        </a>
+                    {% else %}
+                        Plan {{ loop.index }}
+                    {% endif %}
+                </th>
+            {% endfor %}
+        </tr>
+
+        {% for field in plans[0].keys() if field not in ['Id', 'SummaryOfBenefits', 'SummaryOfBenefitsURL'] %}
+        <tr>
+            <td><strong>{{ field }}</strong></td>
+            {% for plan in plans %}
+                <td>{{ plan[field] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div style="text-align:center; margin-top:20px;">
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

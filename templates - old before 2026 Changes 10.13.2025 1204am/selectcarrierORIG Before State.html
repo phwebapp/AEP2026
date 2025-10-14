@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Plans By Carrier(s)</title>
+</head>
+<body>
+    <h2>Select 2026 Plans By Carrier(s)</h2>
+    <form action = "/showselectcarrier" method="POST">
+    <select name="carrier" multiple size = "8">
+    {% for carrier in carriers_drop_down %}
+      <option value="{{ carrier }}">{{ carrier }}</option>
+    {% endfor %}
+  </select>
+  <p><em>Hold Ctrl (Windows) or Command (Mac) to select multiple plans</em></p>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<a href="/">Back to Home</a>
+</body>
+</html>

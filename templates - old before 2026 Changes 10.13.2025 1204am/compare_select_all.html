@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Plans to View</title>
+</head>
+<body>
+    <h2>Select Plans to View for: {{ state }}</h2>
+
+    <form action="/compare_results_all" method="POST">
+        <input type="hidden" name="state" value="{{ state }}">
+
+        <!-- List of plans with checkboxes -->
+        <div>
+            {% for id, name, PlanID in plans %}
+                <div>
+                    <label>
+                        <input type="checkbox" name="plans" value="{{ PlanID }}">
+                        {{ PlanID }} - {{ name }}
+                    </label>
+                </div>
+            {% endfor %}
+        </div>
+
+        <p><em>Select any number of plans to compare</em></p>
+
+        <input type="submit" value="View Plans">
+    </form>
+
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
