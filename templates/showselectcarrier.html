@@ -101,7 +101,6 @@
             white-space: nowrap;
         }
 
-        /* Break between carriers */
         .carrier-break {
             background-color: #e9ecef;
             height: 4px !important;
@@ -110,7 +109,6 @@
             padding: 0 !important;
         }
 
-        /* Carrier name row */
         .carrier-name-row td {
             font-weight: bold;
             background-color: #f1f1f1;
@@ -139,21 +137,24 @@
 
         <!-- Top scrollbar -->
         <div id="top-scroll">
-            <div style="width: max-content; height: 1px;"></div>
+            <div id="top-scroll-inner" style="height: 1px;"></div>
         </div>
 
         <!-- Main table -->
         <div id="main-scroll">
-            <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered" id="main-table">
                 <thead>
                     <tr>
                         <th>State</th>
                         <th>Carrier</th>
-                        <th>PlanName</th>
                         <th>PlanID</th>
+                        <th>PlanName</th>
                         <th>Network</th>
+                        <th>MA</th>
+                        <th>Type</th>
                         <th>MOOP</th>
                         <th>Premium</th>
+                        <th>Giveback</th>
                         <th>Medical</th>
                         <th>Rx</th>
                         <th>PCP</th>
@@ -163,7 +164,9 @@
                         <th>Hearing</th>
                         <th>Transportation</th>
                         <th>OTC</th>
-                        <th>FOOD_UTIL</th>
+                        <th>SSBCI</th>
+                        <th>Notes</th>
+                        <th>SummaryofBenefitsURL</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -198,6 +201,19 @@
                             <td>{{ full_carrier[15] }}</td>
                             <td>{{ full_carrier[16] }}</td>
                             <td>{{ full_carrier[17] }}</td>
+                            <td>{{ full_carrier[18] }}</td>
+                            <td>{{ full_carrier[19] }}</td>
+                            <td>{{ full_carrier[20] }}</td>
+                            <td>{{ full_carrier[21] }}</td>
+                            <td>
+                              {% if full_carrier[23] %}
+                               <a href="{{ full_carrier[23] }}" target="_blank">
+                                 {{ full_carrier[22] }}
+                               </a>
+                              {% else %}
+                                 {{ full_carrier[22] }}
+                              {% endif %}
+                            </td>        
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -205,12 +221,33 @@
         </div>
     </div>
 
-    <!-- Footer Navigation -->
     <div style="text-align:center;">
-<br>
+        <br>
         <a href="/">Back to Home</a>
     </div>
 
     <!-- Scroll sync script -->
     <script>
-        const topScroll = documen
+        const topScroll = document.getElementById("top-scroll");
+        const topScrollInner = document.getElementById("top-scroll-inner");
+        const mainScroll = document.getElementById("main-scroll");
+        const mainTable = document.getElementById("main-table");
+
+        function syncWidth() {
+            topScrollInner.style.width = mainTable.scrollWidth + "px";
+        }
+
+        topScroll.addEventListener("scroll", () => {
+            mainScroll.scrollLeft = topScroll.scrollLeft;
+        });
+
+        mainScroll.addEventListener("scroll", () => {
+            topScroll.scrollLeft = mainScroll.scrollLeft;
+        });
+
+        window.addEventListener("load", syncWidth);
+        window.addEventListener("resize", syncWidth);
+    </script>
+</body>
+
+</html>
